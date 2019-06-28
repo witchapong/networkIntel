@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Network Intelligence</title>
+
+    <style>
+
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        svg {
+          border:1px solid;
+        }
+
+        .mainView{
+          display: flex;
+        }
+
+        .line {
+        fill: none;
+        stroke: green;
+        }
+
+        .Vline {
+        fill: none;
+        stroke: red;
+        }
+
+        #tooltip {
+            border: solid 1px black;
+            padding: 5px;
+            position: absolute;
+            display: none;
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h2 id = "dateText"></h2>
+    <h2>Matured traffic:</h2>
+
+    <div class="mainView">
+        <div>
+            <h2>Suppessed Traffic</h2>
+            <svg id="barChart"></svg>
+
+        </div>
+        <div>
+            <h2>Traffic x Users</h2>
+            <svg id="rawChart"></svg>
+        </div>
+
+    </div>
+
+    <h2>Pre-matured traffic:</h2>
+
+    <div class="mainView">
+        <div>
+            <h2>Suppessed Traffic</h2>
+            <svg id="barChart2"></svg>
+
+        </div>
+        <div>
+            <h2>Traffic x Users</h2>
+            <svg id="rawChart2"></svg>
+        </div>
+
+    </div>
+
+</body>
+    <script src="static/js/d3.js"></script>
+    <script src="static/js/display.js"></script>
+</html>
